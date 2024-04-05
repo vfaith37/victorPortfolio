@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
-import {FaCss3Alt, FaDharmachakra, FaDocker, FaGithub, FaHtml5, FaInstagram, FaJava, FaJsSquare, FaLinkedin, FaLinkedinIn, FaMoon, FaPhp, FaPython, FaSun, FaTwitter } from "react-icons/fa"
+import {FaCar, FaCss3Alt, FaDharmachakra, FaDocker, FaGithub, FaHtml5, FaInstagram, FaJava, FaJsSquare, FaLinkedin, FaLinkedinIn, FaMoon, FaPhp, FaPython, FaSun, FaTwitter } from "react-icons/fa"
+import { HiMenu, HiOutlineX } from "react-icons/hi"
 import LOGO from "./assets/logo.svg"
 import EXTRA from "./assets/star.svg"
 import ARROW from "./assets/Arrow.svg"
@@ -35,31 +36,44 @@ function App() {
 					localStorage.setItem("theme", newTheme);
 					localStorage.setItem("darkMode", !isDarkMode);
 				};
-				console.log(theme);
+				// console.log(theme);
+				const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 	return (
-		<div className="max-w-md mx-auto shadow-md overflow-hidden sm:max-w-full p-0 sm:px-32 sm:py-16 bg-pink-50 dark:bg-neutral-900 text-black dark:text-white">
+		<div className="max-w-md mx-auto shadow-md overflow-hidden sm:max-w-full px-3 py-6 sm:px-32 sm:py-16 bg-pink-50 dark:bg-neutral-900 text-black dark:text-white">
 			<section className='flex justify-between items-center'>
-				<div className='gap-6 justify-between flex text-center text-base font-normal font-outfit'>
-					<p>About</p>
-					<p>Projects</p>
-					<p>Contact me</p>
-				</div>
+			<div className="md:hidden flex justify-between items-center">
+        <button
+          className="md:hidden"
+          onClick={toggleMenu}
+        >
+         {isOpen ? <HiOutlineX className="h-6 w-6 text-black dark:text-white" /> : <HiMenu className="h-6 w-6 text-black dark:text-white"/>}
+        </button>
+      </div>
+      <nav className={`md:flex gap-6 md:flex-row ${isOpen ? 'block absolute top-16 ease-in-out duration-500 gap-5' : 'hidden'}`}>
+        <a href="#" className="gap-6 justify-between flex text-center text-sm sm:text-base font-normal font-outfit text-black dark:text-white">About</a>
+        <a href="#" className="gap-6 justify-between flex text-center text-sm sm:text-base font-normal font-outfit text-black dark:text-white">Projects</a>
+        <a href="#" className="gap-6 justify-between flex text-center text-sm sm:text-base font-normal font-outfit text-black dark:text-white">Contact me</a>
+      </nav>
 				<div className='flex gap-3 justify-center items-center '>
-					<img src={LOGO} alt="logo" />
-					<p className='font-poppins text-red-950 dark:text-white text-3xl font-bold'>Figo</p>
+					<img src={LOGO} alt="logo" className='w-5 sm:w-10 h-5 sm:h-10' />
+					<p className='font-poppins text-red-950 dark:text-white text-xl sm:text-3xl font-bold'>Figo</p>
 				</div> 
 					<button
-					className={`relative inline-block w-28 h-16 transition-colors duration-300 ease-in-out ${
+					className={`relative inline-block w-11 h-6 sm:w-28 sm:h-16 transition-colors duration-300 ease-in-out ${
 						theme === "light" ? 'bg-stone-200' : 'bg-purple-500'
 					} rounded-full shadow-inner focus:outline-none`}
 					onClick={handleToggle}
 					>
 						<span
-							className={`absolute left-1 top-1 w-14 h-14 ${
-								isDarkMode ? 'translate-x-12' : 'translate-x-0'
+							className={`absolute left-0 top-0 sm:left-1 sm:top-1 w-6 h-6 sm:w-14 sm:h-14 ${
+								isDarkMode ? 'translate-x-5 sm:translate-x-12' : 'translate-x-0'
 							} bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out flex items-center justify-center`}
 						>
-							{isDarkMode ? <FaMoon className="w-6 h-6 text-black" /> : <FaSun className="w-6 h-6 text-neutral-900" />}
+							{isDarkMode ? <FaMoon className="sm:w-6 sm:h-6 text-black" /> : <FaSun className="sm:w-6 sm:h-6 text-neutral-900" />}
 						</span>
 					</button>
 
