@@ -113,7 +113,7 @@ function App() {
 </section>
 <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-44 mx-auto">
 		<div>
-			<div className='h-[52.8125rem] w-[34.375rem] bg-red-200'></div>
+			<div className='h-[29.1875rem] sm:h-[52.8125rem] w-full sm:w-[34.375rem] bg-red-200'></div>
 		<div className='mt-5'>
 			<h1 className='text-2xl font-semibold leading-9 font-poppins'>Blockvote</h1>
 			<p className='text-stone-400 text-lg font-medium tracking-wide font-urbanist mt-4'>A blockchain-based voting platform streamlining elections for<br /> both voters and candidates across.</p>
@@ -123,7 +123,7 @@ function App() {
 
 
 		<div>
-		<div className='h-[29.1875rem] w-[34.375rem] bg-teal-600'></div>
+		<div className='h-[29.1875rem] w-full sm:w-[34.375rem] bg-teal-600'></div>
 		<div className='mt-5'>
 			<h1 className='text-2xl font-semibold leading-9 font-poppins'>Shelta</h1>
 			<p className='text-stone-400 text-lg font-medium tracking-wide font-urbanist mt-4'>Shelta is a property rental platform that makes it simpler for<br /> multifamily owners find the perfect tenant for their vacancy</p>
@@ -133,7 +133,7 @@ function App() {
 
 
 		<div className='mt-12'>
-			<div className='h-[29.1875rem] w-[34.375rem] bg-orange-100'></div>
+			<div className='h-[29.1875rem] w-full sm:w-[34.375rem] bg-orange-100'></div>
 		<div className='mt-5'>
 			<h1 className='text-2xl font-semibold leading-9 font-poppins'>BUSA App</h1>
 			<p className='text-stone-400 text-lg font-medium tracking-wide font-urbanist mt-4'>This is the pioneer software application for the Babcock<br /> university student association</p>
@@ -142,7 +142,7 @@ function App() {
 		</div>
 
 		<div className='sm:mt-[-350px]'>
-			<div className='h-[52.8125rem] w-[34.375rem] bg-gradient-to-br from-fuchsia-700 via-purple-700 to-violet-500'></div>
+			<div className='h-[29.1875rem] sm:h-[52.8125rem] w-full sm:w-[34.375rem] bg-gradient-to-br from-fuchsia-700 via-purple-700 to-violet-500'></div>
 		<div className='mt-12'>
 			<h1 className='text-2xl font-semibold leading-9 font-poppins'>Blockvote</h1>
 			<p className='text-stone-400 text-lg font-medium tracking-wide font-urbanist mt-4'>A blockchain-based voting platform streamlining elections for<br /> both voters and candidates across.</p>
