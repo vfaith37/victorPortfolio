@@ -122,7 +122,7 @@ function App() {
 		</div>
 
 
-		<div>
+		<div className='mt-12 sm:m-0'>
 		<div className='h-[29.1875rem] w-full sm:w-[34.375rem] bg-teal-600'></div>
 		<div className='mt-5'>
 			<h1 className='text-2xl font-semibold leading-9 font-poppins'>Shelta</h1>
@@ -141,7 +141,7 @@ function App() {
 		</div>
 		</div>
 
-		<div className='sm:mt-[-350px]'>
+		<div className='mt-12 sm:mt-[-350px]'>
 			<div className='h-[29.1875rem] sm:h-[52.8125rem] w-full sm:w-[34.375rem] bg-gradient-to-br from-fuchsia-700 via-purple-700 to-violet-500'></div>
 		<div className='mt-12'>
 			<h1 className='text-2xl font-semibold leading-9 font-poppins'>Blockvote</h1>
