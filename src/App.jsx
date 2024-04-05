@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
 import {FaCss3Alt, FaDharmachakra, FaDocker, FaGithub, FaHtml5, FaInstagram, FaJava, FaJsSquare, FaLinkedin, FaLinkedinIn, FaMoon, FaPhp, FaPython, FaSun, FaTwitter } from "react-icons/fa"
@@ -36,9 +37,9 @@ function App() {
 				};
 				console.log(theme);
 	return (
-		<div className="max-w-md mx-auto shadow-md overflow-hidden sm:max-w-full p-0 sm:px-32 sm:py-16 bg-pink-50 dark:bg-neutral-900 dark:text-white">
+		<div className="max-w-md mx-auto shadow-md overflow-hidden sm:max-w-full p-0 sm:px-32 sm:py-16 bg-pink-50 dark:bg-neutral-900 text-black dark:text-white">
 			<section className='flex justify-between items-center'>
-				<div className='gap-6 justify-between flex text-center text-black dark:text-white text-base font-normal font-outfit'>
+				<div className='gap-6 justify-between flex text-center text-base font-normal font-outfit'>
 					<p>About</p>
 					<p>Projects</p>
 					<p>Contact me</p>
@@ -65,7 +66,7 @@ function App() {
 						</section>
 						<section className='mt-52 text-red-950 dark:text-white flex flex-col'>
 							<img src={EXTRA} alt="extra" className='self-end p-6 mr-[14.75rem]' />
-							<h1 className='text-center text-9xl font-extrabold mb-3'>Victor Fagbohun S</h1>
+							<h1 className={`text-center text-9xl font-extrabold mb-3 chall ${isDarkMode ? 'invert' : ''}`}>Victor Fagbohun S</h1>
 							<p className='text-center text-opacity-40 text-2xl font-normal font-outfit mt-7'>Hi there, I’m a full stack developer passionate about crafting captivating<br /> digital experiences. </p>
 							<div className='flex mt-24 my-12 self-center gap-3 text-neutral-900 dark:text-gray-50'>
 		<div className='w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center flex-col'>
@@ -194,7 +195,6 @@ function App() {
 		</span>
 	</div>
 </div>
-	{/* <p className='text-zinc-400 text-sm font-normal font-montserrat self-center'>SKILLS</p> */}
 	</section>
 <section className='flex flex-col items-center mt-44 mb-64'>
 	<p className='text-neutral-400 text-xl font-normal font-inter'>Want to work on a project?</p>
