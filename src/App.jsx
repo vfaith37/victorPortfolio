@@ -80,7 +80,7 @@ function App() {
 						</section>
 						<section className='mt-52 text-red-950 dark:text-white flex flex-col items-center'>
 							<img src={EXTRA} alt="extra" className='self-end p-6 mr-[1.75rem] sm:mr-[14.75rem]' />
-							<h1 className={`text-center text-5xl sm:text-9xl font-extrabold mb-3 chall ${isDarkMode ? 'invert' : ''}`}>Victor Fagbohun S</h1>
+							<h1 className={`text-center text-[46px] sm:text-9xl font-extrabold mb-3 chall ${isDarkMode ? 'invert' : ''}`}>Victor Fagbohun S</h1>
 							<p className='text-center text-opacity-40 text-sm sm:text-2xl font-normal font-outfit mt-7 w-[20.5625rem] sm:w-[60.5625rem]'>Hi there, I’m a full stack developer passionate about crafting captivating digital experiences. </p>
 							<div className='flex mt-24 my-12 self-center gap-3 text-neutral-900 dark:text-gray-50'>
 		<div className='w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center flex-col'>
