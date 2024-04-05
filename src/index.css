@@ -4,16 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.project-card {
-  transition: all 0.3s ease-in-out;
+.chall {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
-
-.project-card:hover {
-  width: 770px;
-}
-
-.project-card:not(:hover) {
-  width: 293px;
+.invert {
+  filter: invert(100%);
 }
 
 
